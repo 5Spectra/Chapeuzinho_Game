@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: c3a46eb2e6dbd5b4bbb1bb639ece7d24
+timeCreated: 1511290821
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FreeArt_Houses_reusableAssets_0
+    21300002: FreeArt_Houses_reusableAssets_1
+    21300004: FreeArt_Houses_reusableAssets_2
+    21300006: FreeArt_Houses_reusableAssets_3
+    21300008: FreeArt_Houses_reusableAssets_4
+    21300010: FreeArt_Houses_reusableAssets_5
+    21300012: FreeArt_Houses_reusableAssets_6
+    21300014: FreeArt_Houses_reusableAssets_7
+    21300016: FreeArt_Houses_reusableAssets_8
+    21300018: FreeArt_Houses_reusableAssets_9
+    21300020: FreeArt_Houses_reusableAssets_10
+    21300022: FreeArt_Houses_reusableAssets_11
+    21300024: FreeArt_Houses_reusableAssets_12
+    21300026: FreeArt_Houses_reusableAssets_13
+    21300028: FreeArt_Houses_reusableAssets_14
+    21300030: FreeArt_Houses_reusableAssets_15
+    21300032: FreeArt_Houses_reusableAssets_16
+    21300034: FreeArt_Houses_reusableAssets_17
+    21300036: FreeArt_Houses_reusableAssets_18
+    21300038: FreeArt_Houses_reusableAssets_19
+    21300040: FreeArt_Houses_reusableAssets_20
+    21300042: FreeArt_Houses_reusableAssets_21
+    21300044: FreeArt_Houses_reusableAssets_22
+    21300046: FreeArt_Houses_reusableAssets_23
+    21300048: FreeArt_Houses_reusableAssets_24
+    21300050: FreeArt_Houses_reusableAssets_25
+    21300052: FreeArt_Houses_reusableAssets_26
+    21300054: FreeArt_Houses_reusableAssets_27
+    21300056: FreeArt_Houses_reusableAssets_28
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 299
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 299
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 318
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 335
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 37
+        width: 293
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 283
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_6
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 296
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 311
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_8
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 240
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 240
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 235
+        width: 18
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 236
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_12
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 236
+        width: 56
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_13
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 181
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_14
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 181
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_15
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 140
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 136
+        width: 14
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_17
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 136
+        width: 14
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_18
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 172
+        width: 10
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_20
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 128
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 57
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_22
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 63
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_23
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 65
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 23
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_25
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 28
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_26
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 18
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_27
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 21
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FreeArt_Houses_reusableAssets_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 17
+        width: 542
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

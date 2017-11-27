@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: d67795ee30e9cd64cbd81b2cf7f39568
+timeCreated: 1511291685
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Lobo_0
+    21300002: Lobo_1
+    21300004: Lobo_2
+    21300006: Lobo_3
+    21300008: Lobo_4
+    21300010: Lobo_5
+    21300012: Lobo_6
+    21300014: Lobo_7
+    21300016: Lobo_8
+    21300018: Lobo_9
+    21300020: Lobo_10
+    21300022: Lobo_11
+    21300024: Lobo_12
+    21300026: Lobo_13
+    21300028: Lobo_14
+    21300030: Lobo_15
+    21300032: Lobo_16
+    21300034: Lobo_17
+    21300036: Lobo_18
+    21300038: Lobo_19
+    21300040: Lobo_20
+    21300042: Lobo_21
+    21300044: Lobo_22
+    21300046: Lobo_23
+    21300048: Lobo_24
+    21300050: Lobo_25
+    21300052: Lobo_26
+    21300054: Lobo_27
+    21300056: Lobo_28
+    21300058: Lobo_29
+    21300060: Lobo_30
+    21300062: Lobo_31
+    21300064: Lobo_32
+    21300066: Lobo_33
+    21300068: Lobo_34
+    21300070: Lobo_35
+    21300072: Lobo_36
+    21300074: Lobo_37
+    21300076: Lobo_38
+    21300078: Lobo_39
+    21300080: Lobo_40
+    21300082: Lobo_41
+    21300084: Lobo_42
+    21300086: Lobo_43
+    21300088: Lobo_44
+    21300090: Lobo_45
+    21300092: Lobo_46
+    21300094: Lobo_47
+    21300096: Lobo_48
+    21300098: Lobo_49
+    21300100: Lobo_50
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 180
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lobo_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1139
+        width: 138
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1139
+        width: 141
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1139
+        width: 142
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 938
+        width: 140
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 938
+        width: 165
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 938
+        width: 158
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_6
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 938
+        width: 162
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 739
+        width: 174
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_16
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_17
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_18
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_19
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 539
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_20
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_21
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_22
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 539
+        width: 158
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 330
+        width: 158
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 330
+        width: 158
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_25
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 330
+        width: 158
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_26
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 331
+        width: 230
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_27
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 331
+        width: 209
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_28
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 359
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_29
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 330
+        width: 231
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_30
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 330
+        width: 289
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_31
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 330
+        width: 257
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_32
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 330
+        width: 200
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_33
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 330
+        width: 184
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_34
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 344
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_35
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 203
+        width: 80
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_36
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 203
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_37
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 203
+        width: 85
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_38
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 203
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_39
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 203
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 27
+        width: 151
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_41
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 27
+        width: 151
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_42
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 27
+        width: 151
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_43
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 27
+        width: 151
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_44
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 27
+        width: 210
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_45
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 27
+        width: 214
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_47
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 27
+        width: 213
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lobo_49
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 27
+        width: 203
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
