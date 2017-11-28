@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B422AC07-4B69-1E32-F757-EF14D54D734C}</ProjectGuid>
+    <ProjectGuid>{4CDD274A-2B12-45D5-D60D-EB28A782F58B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,15 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Controle_test.cs" />
      <Compile Include="Assets\mae_start.cs" />
      <Compile Include="Assets\Scripts\Menu_Selector.cs" />
      <Compile Include="Assets\Simple_move.cs" />
      <Compile Include="Assets\Spawn_as_child.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/andre.sacilotto/Documents/Andre PROJECTS 2/Chapeu Vermelho/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/andre.sacilotto/Documents/Chapeuzinho_Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
