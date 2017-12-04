@@ -9,24 +9,30 @@ public class Simple_move : MonoBehaviour {
 	public bool isJumping;
 
 	Rigidbody2D rb;
+	Animator anim;
 
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
+		anim = GetComponent<Animator> ();
 	}
 	
 	void FixedUpdate () {
 
-		float x = Input.GetAxisRaw ("Horizontal") * Time.fixedDeltaTime;
+		float x = Input.GetAxisRaw ("Horizontal");
+		float j = Input.GetAxisRaw ("Jump");
 
-		print ("x: " + x);
+		if (x != 0) {
+			anim.SetFloat ("Horizontal", x);
+			anim.speed = 1f;
+		}
+		else
+			anim.speed = 0.1f;			
 
-		rb.AddForce (Vector2.right * x * moveSpeed);
+		rb.velocity = new Vector2 (x * moveSpeed, rb.velocity.y);
 
-		if (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown (KeyCode.JoystickButton0))
-			if (isJumping == false) {
-				rb.AddForce (Vector2.up * jumpHeight);
-				
-			}
+		if (isJumping == false)
+			rb.velocity = new Vector2 (rb.velocity.x , j * jumpHeight);				
+
 	}
 
 	void OnCollisionStay2D (Collision2D coll){
