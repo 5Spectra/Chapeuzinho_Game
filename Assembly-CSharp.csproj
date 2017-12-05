@@ -52,15 +52,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controle_test.cs" />
-     <Compile Include="Assets\Scripts\mae_start.cs" />
      <Compile Include="Assets\Scripts\Menu_Selector.cs" />
+     <Compile Include="Assets\Scripts\NPC_Talk.cs" />
+     <Compile Include="Assets\Scripts\Player_Collisions.cs" />
+     <Compile Include="Assets\Scripts\random_doce.cs" />
      <Compile Include="Assets\Scripts\Simple_move.cs" />
      <Compile Include="Assets\Scripts\Spawn_as_child.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/andre.sacilotto/Documents/Andre PROJECTS 2/Chapeuzinho_Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/andre.sacilotto/Documents/Chapeuzinho_Game/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
