@@ -8,3 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Menu.unity
     guid: 55a55f223687ab0488b401a9463592c8
+  - enabled: 1
+    path: Assets/Cenas/Tutorial.unity
+    guid: cee16de39469b6e40ab807f6ecd4df74
+  - enabled: 1
+    path: Assets/Cenas/Boss Fight.unity
+    guid: 5c10c61ff2ad0eb49bc6bfb24807d35f
+  - enabled: 1
+    path: Assets/Cenas/CutScene.unity
+    guid: 0e433d32997743f489327d37b92145a6
+  - enabled: 1
+    path: Assets/Cenas/Plataforma.unity
+    guid: 7417761b9c6f79d4b94d8afbe91e7ee9
