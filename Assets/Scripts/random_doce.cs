@@ -15,4 +15,5 @@ public class random_doce : MonoBehaviour {
 		render.sprite = imagens_doce[rng];
 
 	}
+		
 }
