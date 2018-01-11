@@ -570,6 +570,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4017691071016198, guid: 7bffa17257c24904898cdd3c56d65493, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 8.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017691071016198, guid: 7bffa17257c24904898cdd3c56d65493, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bffa17257c24904898cdd3c56d65493, type: 2}
   m_IsPrefabParent: 0
@@ -2076,7 +2084,7 @@ Prefab:
     - target: {fileID: 114854048326294426, guid: 79d9d6166eb7b7548b64c3c449dd901a,
         type: 2}
       propertyPath: falas.Array.data[6]
-      value: ( 1/3 - 2 ) dos doces coletados
+      value: METADE dos doces coletados
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d9d6166eb7b7548b64c3c449dd901a, type: 2}

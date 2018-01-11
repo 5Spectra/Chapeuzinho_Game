@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class End_Tutorial : MonoBehaviour {
+public class End_cena : MonoBehaviour {
 
 	public string cena; 
 

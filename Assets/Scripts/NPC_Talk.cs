@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class NPC_Talk : MonoBehaviour {
 
-	public GameObject e_btn, text_box; 
+	public GameObject e_btn, text_box, parede; 
 	public Text texto;
+	public bool desaparece;
 
 	bool perto, axisDown;
-	int num_fala;
+	[HideInInspector]
+	public int num_fala;
 
 	[TextArea()]
 	public string[] falas; 
@@ -34,6 +36,9 @@ public class NPC_Talk : MonoBehaviour {
 
 		if (falas.Length - 1 < num_fala) {
 			num_fala = 0;
+			Destroy (parede);
+			if (desaparece == true)
+				Destroy (gameObject, 6);
 		}
 	}
 
