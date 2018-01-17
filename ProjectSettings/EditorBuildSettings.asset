@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Cenas/Game_Maneger_Start.unity
+    guid: c98bfade9f7bded468d9811d74d8d380
+  - enabled: 1
     path: Assets/Cenas/Menu.unity
     guid: 55a55f223687ab0488b401a9463592c8
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Boss Fight.unity
     guid: 5c10c61ff2ad0eb49bc6bfb24807d35f
-  - enabled: 1
-    path: Assets/Cenas/CutScene.unity
-    guid: 0e433d32997743f489327d37b92145a6
   - enabled: 1
     path: Assets/Cenas/Plataforma.unity
     guid: 7417761b9c6f79d4b94d8afbe91e7ee9
