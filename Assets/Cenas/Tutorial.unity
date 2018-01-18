@@ -2017,7 +2017,7 @@ Prefab:
     - target: {fileID: 114854048326294426, guid: 79d9d6166eb7b7548b64c3c449dd901a,
         type: 2}
       propertyPath: falas.Array.size
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4393336621806810, guid: 79d9d6166eb7b7548b64c3c449dd901a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2064,7 +2064,7 @@ Prefab:
     - target: {fileID: 114854048326294426, guid: 79d9d6166eb7b7548b64c3c449dd901a,
         type: 2}
       propertyPath: falas.Array.data[4]
-      value: Lembre-se toda vez que tomar dano
+      value: "Lembre-se voc\xEA somente tem uma"
       objectReference: {fileID: 0}
     - target: {fileID: 114854048326294426, guid: 79d9d6166eb7b7548b64c3c449dd901a,
         type: 2}
@@ -2079,7 +2079,7 @@ Prefab:
     - target: {fileID: 114854048326294426, guid: 79d9d6166eb7b7548b64c3c449dd901a,
         type: 2}
       propertyPath: falas.Array.data[5]
-      value: "Ir\xE1 voltar no ultimo checkpoint e perder"
+      value: vida tome cuidado pelo caminho
       objectReference: {fileID: 0}
     - target: {fileID: 114854048326294426, guid: 79d9d6166eb7b7548b64c3c449dd901a,
         type: 2}

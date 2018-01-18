@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: Assets/Cenas/Tutorial.unity
     guid: cee16de39469b6e40ab807f6ecd4df74
   - enabled: 1
-    path: Assets/Cenas/Boss Fight.unity
-    guid: 5c10c61ff2ad0eb49bc6bfb24807d35f
-  - enabled: 1
     path: Assets/Cenas/Plataforma.unity
     guid: 7417761b9c6f79d4b94d8afbe91e7ee9
+  - enabled: 1
+    path: Assets/Cenas/Boss_Fight.unity
+    guid: 5c10c61ff2ad0eb49bc6bfb24807d35f
+  - enabled: 1
+    path: Assets/Cenas/Death.unity
+    guid: d62bb522ab80ddf4cb079ba9d49a7041
