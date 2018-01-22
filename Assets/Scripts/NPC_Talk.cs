@@ -14,7 +14,7 @@ public class NPC_Talk : MonoBehaviour {
 	public int num_fala;
 
 	[TextArea()]
-	public string[] falas; 
+	public string[] falas;
 
 	void Start () {
 		e_btn.SetActive(false);
