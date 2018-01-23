@@ -29,7 +29,7 @@ public class NPC_Talk : MonoBehaviour {
 			texto.text = falas [num_fala];
 			num_fala += 1;
 			axisDown = true;
-			} 
+		} 
 		if (Input.GetAxisRaw ("Interagir") == 0) {
 			axisDown = false;
 		}
