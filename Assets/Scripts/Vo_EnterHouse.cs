@@ -13,8 +13,6 @@ public class Vo_EnterHouse : MonoBehaviour
 	}
 
 	void Update(){
-		
-		print (Vo_EnterHouse.entra_sai);
 
 		//entrar na casa
 		if (Input.GetAxisRaw ("Interagir") > 0 && perto == true && entra_sai == 0)

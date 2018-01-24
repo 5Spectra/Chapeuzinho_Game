@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class Player_Collisions : MonoBehaviour {
 
-	[SerializeField]
-	int Doce_Count;
+	public static int Doce_Count;
 	public Text doces;
 
 	void OnTriggerEnter2D (Collider2D coll){

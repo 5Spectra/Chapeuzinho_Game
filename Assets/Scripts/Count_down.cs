@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class Count_down : MonoBehaviour {
 
 	float number = 10;
-	public Text temporizador;
+	public Text temporizador, doces_c;
 
 	void Update () {
+		//temporizador
 		if (number > 0)
 			number -= Time.deltaTime;
 		else
@@ -17,6 +18,10 @@ public class Count_down : MonoBehaviour {
 
 		string texto = (Mathf.Round(number)).ToString ();
 		temporizador.text = texto;
+
+		//doces
+		doces_c.text = Player_Collisions.Doce_Count.ToString() + " de " + 38;
+
 	}
 
 	public void try_again(){
