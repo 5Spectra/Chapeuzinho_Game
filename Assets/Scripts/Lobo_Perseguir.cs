@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Lobo_Perseguir : MonoBehaviour {
 
-	// Use this for initialization
+	public GameObject[] waypoint;
+
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

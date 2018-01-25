@@ -21,6 +21,8 @@ public class Vo_EnterHouse : MonoBehaviour
 			jogador.transform.position = new Vector3 (193f, jogador.transform.position.y);
 			entra_sai = 1;
 			GameObject.Find("Casa_Vo").GetComponent<Conversa_1>().enabled = true;
+
+			GetComponent<Vo_EnterHouse> ().enabled = false;
 		}
 
 		//sair da casa

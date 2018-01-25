@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class Conversa_1 : MonoBehaviour {
 
 	public GameObject jogador, lobo, conversa, volta_way;
-	public GameObject chapeu_Fala, lobo_Fala;
+	public GameObject chapeu_Fala, lobo_Fala, waypoint;
 
 	public string[] falas;
 
 	Text chapeuF, loboF;
 	int conversa_level;
+	bool axisDown;
 
 	void Start(){
 		conversa_level = 0;
@@ -38,66 +39,77 @@ public class Conversa_1 : MonoBehaviour {
 		if (Vo_EnterHouse.entra_sai == 2) {
 			//habilita o script de movimentação
 			jogador.GetComponent<Simple_move> ().enabled = true;
-			//habilitar o script de perseguição
-			lobo.GetComponent<Lobo_Perseguir> ().enabled = true;
 			//hablita o caminho de volta
 			volta_way.SetActive (true);
-			//desabilita a Conversa para melhor perfoma
-			conversa.GetComponent<Conversa_1>().enabled = false;
+
+			StartCoroutine (Fuga_start ());
 		}
 
-		if (Input.GetKeyDown(KeyCode.E)) {
-			if (conversa_level == 0)
-				conversa_level++;
-		
-			else if (conversa_level == 1){
-				chapeu_Fala.SetActive (true);
-				chapeuF.text = falas[0]; 
-				conversa_level++;
-			}
+		if (Input.GetAxisRaw ("Interagir") > 0){
 
-			else if (conversa_level == 2){
-				chapeu_Fala.SetActive (false);
-				lobo_Fala.SetActive (true);
-				loboF.text = falas[1]; 
-				conversa_level++;
-			}
+			if (axisDown == false) {
 
-			else if (conversa_level == 3){
-				chapeu_Fala.SetActive (true);
-				lobo_Fala.SetActive (false);
-				chapeuF.text = falas[2]; 
-				conversa_level++;
-			}
+				if (conversa_level == 0)
+					conversa_level++;
 
-			else if (conversa_level == 4){
-				chapeu_Fala.SetActive (false);
-				lobo_Fala.SetActive (true);
-				loboF.text = falas[3]; 
-				conversa_level++;
-			}
+				else if (conversa_level == 1)
+					Conversas (true);
+				
+				else if (conversa_level == 2)
+					Conversas (false);
+				
+				else if (conversa_level == 3)
+					Conversas (true); 
 
-			else if (conversa_level == 5){
-				chapeu_Fala.SetActive (true);
-				lobo_Fala.SetActive (false);
-				chapeuF.text = falas[4]; 
-				conversa_level++;
-			}
-
-			else if (conversa_level == 6){
-				chapeu_Fala.SetActive (false);
-				lobo_Fala.SetActive (true);
-				loboF.text = falas[5]; 
-				conversa_level++;
-			}	
-		
-			//fim da conversa
-			else if (conversa_level == 7) {
-				Destroy(GameObject.Find("Carvas_Conversa"), 10f);
-				Vo_EnterHouse.entra_sai = 2;
-			}
-		
+				else if (conversa_level == 4)
+					Conversas (false);
+				
+				else if (conversa_level == 5)
+					Conversas (true);
+				
+				else if (conversa_level == 6)
+					Conversas (false);			
+				
+				else if (conversa_level == 7) {
+					conversa_level++;
+				}
+				
+				axisDown = true;
+			}		
 		}
+
+		//fim conversa
+		if (conversa_level == 8) {
+			Destroy(GameObject.Find("Carvas_Conversa"), 10f);
+			Vo_EnterHouse.entra_sai = 2;
+		}
+
+		if (Input.GetAxisRaw ("Interagir") == 0)
+			axisDown = false;
 			
+	}
+
+	void Conversas (bool isChapeu){
+		chapeu_Fala.SetActive (isChapeu);
+		lobo_Fala.SetActive (!isChapeu);
+		chapeuF.text = falas[conversa_level - 1]; 
+		loboF.text = falas[conversa_level - 1]; 
+		conversa_level++;
+	}
+
+	IEnumerator Fuga_start(){
+
+		yield return new WaitForSeconds (2);
+
+		lobo.transform.position = waypoint.transform.position;
+		lobo.transform.localScale = new Vector3 (1.5f, 1.5f, 1);
+
+		yield return new WaitForSeconds (2);
+		//habilitar o script de perseguição
+		lobo.GetComponent<Lobo_Perseguir> ().enabled = true;
+
+		yield return new WaitForSeconds (2);
+		//desabilita a Conversa para melhor perfomance
+		conversa.GetComponent<Conversa_1>().enabled = false;		
 	}
 }
