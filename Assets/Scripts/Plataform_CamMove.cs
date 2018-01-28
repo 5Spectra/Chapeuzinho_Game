@@ -8,7 +8,7 @@ public class Plataform_CamMove : MonoBehaviour {
 	public float pos_X;
 
 	void OnTriggerExit2D (Collider2D coll){
-
+		if (coll.gameObject.tag == "Player")
 		cam.transform.position = new Vector3 (pos_X, cam.transform.position.y, cam.transform.position.z);
 
 	}

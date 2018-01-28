@@ -86,7 +86,7 @@ public class Conversa_1 : MonoBehaviour {
 
 		if (Input.GetAxisRaw ("Interagir") == 0)
 			axisDown = false;
-			
+
 	}
 
 	void Conversas (bool isChapeu){
@@ -99,16 +99,14 @@ public class Conversa_1 : MonoBehaviour {
 
 	IEnumerator Fuga_start(){
 
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (2f);
 
 		lobo.transform.position = waypoint.transform.position;
 		lobo.transform.localScale = new Vector3 (1.5f, 1.5f, 1);
 
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (0.5f);
 		//habilitar o script de perseguição
 		lobo.GetComponent<Lobo_Perseguir> ().enabled = true;
-
-		yield return new WaitForSeconds (2);
 		//desabilita a Conversa para melhor perfomance
 		conversa.GetComponent<Conversa_1>().enabled = false;		
 	}
