@@ -16,6 +16,7 @@ public class Lobo_Perseguir : MonoBehaviour {
 
 	void Start () {
 		waypoint = WayPointsFolder.GetComponentsInChildren<Transform>();
+		GetComponent<Animator> ().SetInteger ("Estado", 6);
 	}
 
 	void Update(){

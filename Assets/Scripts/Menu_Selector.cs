@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Menu_Selector : MonoBehaviour {
 
+	//não foi utilizado
+
 	public RectTransform selector;
 	[SerializeField]
 	int btn_selecao;
@@ -12,25 +14,30 @@ public class Menu_Selector : MonoBehaviour {
 	public Transform menus;
 	public Text tetos;
 
+	bool axisDown;
+
 	void Start () {
 		selector.localPosition  = new Vector3 ( -230, -20);
-		print(menus.childCount);
 	}
 
 	void Update () {
-	
-		if (Input.GetKeyDown (KeyCode.W) && btn_selecao > 0) {
-			Verifc (-1);
-			selector.localPosition  -= new Vector3 (0, -110);
+
+		bool x = Input.GetButtonDown ("Menu JoyStick");
+		print (x);
+
+		if (Input.GetKeyDown (KeyCode.W))
+			if (axisDown == false && btn_selecao > 0) {
+				Verifc (-1);
+				selector.localPosition  -= new Vector3 (0, -110);
 		}
 
-		if (Input.GetKeyDown (KeyCode.S) && btn_selecao < 2) {
-			Verifc (1);
-			selector.localPosition  -= new Vector3 (0, 110);
-		}
+		if (Input.GetKeyDown (KeyCode.S))
+			if (axisDown == false && btn_selecao < 2) {
+				Verifc (1);
+				selector.localPosition -= new Vector3 (0, 110);
+			}
 
-		if (Input.GetKeyDown(KeyCode.Return) ||Input.GetKeyDown (KeyCode.Joystick1Button7)) {
-		//if (Input.GetKeyDown (KeyCode.E)) {
+		if (Input.GetKeyDown(KeyCode.Return) || Input.GetAxisRaw ("Interagir") > 0) {
 			switch (btn_selecao) {
 			case 0:
 				tetos.text = "a";
@@ -43,6 +50,10 @@ public class Menu_Selector : MonoBehaviour {
 				break;
 			}
 		}
+
+		if (Input.GetAxisRaw ("Interagir") == 0)
+			axisDown = false;
+		
 
 	}
 

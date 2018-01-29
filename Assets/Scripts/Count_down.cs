@@ -24,11 +24,7 @@ public class Count_down : MonoBehaviour {
 
 	}
 
-	public void try_again(){
-		SceneManager.LoadScene ("Plataforma");
+	public void Troca_cena(string cena){
+		SceneManager.LoadScene (cena);
 	}
-	public void surrender(){
-		SceneManager.LoadScene ("Menu");
-	}
-
 }
