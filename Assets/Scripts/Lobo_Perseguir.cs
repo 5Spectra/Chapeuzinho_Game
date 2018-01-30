@@ -26,7 +26,7 @@ public class Lobo_Perseguir : MonoBehaviour {
 			else trapaciando = false;
 		}
 
-		if (Input.GetKeyDown (KeyCode.R)) trapaciando = !trapaciando;
+		//if (Input.GetKeyDown (KeyCode.R)) trapaciando = !trapaciando;
 
 		if (trapaciando == true)
 			if (transform.position != player.position) {

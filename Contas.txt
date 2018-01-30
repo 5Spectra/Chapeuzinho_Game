@@ -7,7 +7,6 @@
 107,1
 124,95
 
-- Checar se controlle de xbox está conectado, e se estiver mudar a letra dos botões.
-- Implementar controle na tela de morte.
-- Adicionar aúdios.
-- Criar a animação e conversa e o combate final. (quick time event de ataque e defesa).
+
+- Adicionar aúdios e musicas.
+- Criar a animação de conversa e o combate final. (quick time event de ataque e defesa).

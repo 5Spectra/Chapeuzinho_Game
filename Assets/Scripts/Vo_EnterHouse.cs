@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Vo_EnterHouse : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class Vo_EnterHouse : MonoBehaviour
 	public static int entra_sai;	//0 = Lado de Fora | 1 = entrou | 2 = Saio
 
 	void Start () {
+
+		if (JoyStick_detection.isJoyConnect == true)
+			e_btn.GetComponentInChildren<Text>().text = "B";
+
 		e_btn.SetActive(false);
 	}
 

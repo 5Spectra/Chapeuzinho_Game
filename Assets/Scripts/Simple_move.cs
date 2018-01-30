@@ -21,8 +21,7 @@ public class Simple_move : MonoBehaviour {
 		float x = Input.GetAxisRaw ("Horizontal");
 		float j = Input.GetAxisRaw ("Jump");
 
-		if (Input.GetKeyDown (KeyCode.F))
-			isJumping = !isJumping;
+		//if (Input.GetKeyDown (KeyCode.F)) isJumping = !isJumping;
 
 		if (x != 0) {
 			anim.SetFloat ("Horizontal", x);

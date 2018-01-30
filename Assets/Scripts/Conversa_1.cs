@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Conversa_1 : MonoBehaviour {
 
 	public GameObject jogador, lobo, conversa, volta_way;
-	public GameObject chapeu_Fala, lobo_Fala, waypoint;
+	public GameObject chapeu_Fala, lobo_Fala, waypoint, btn;
 
 	public string[] falas;
 
@@ -16,6 +16,9 @@ public class Conversa_1 : MonoBehaviour {
 
 	void Start(){
 		conversa_level = 0;
+
+		if (JoyStick_detection.isJoyConnect == true)
+			btn.GetComponentInChildren<Text>().text = "B";
 
 		chapeuF = chapeu_Fala.GetComponentInChildren<Text> ();
 		loboF = lobo_Fala.GetComponentInChildren<Text> ();

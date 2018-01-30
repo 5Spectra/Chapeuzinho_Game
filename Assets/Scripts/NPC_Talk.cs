@@ -17,6 +17,10 @@ public class NPC_Talk : MonoBehaviour {
 	public string[] falas;
 
 	void Start () {
+
+		if (JoyStick_detection.isJoyConnect == true)
+			e_btn.GetComponentInChildren<Text>().text = "B";
+
 		e_btn.SetActive(false);
 		text_box.SetActive (false);
 	}

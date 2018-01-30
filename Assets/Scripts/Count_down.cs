@@ -20,7 +20,7 @@ public class Count_down : MonoBehaviour {
 		temporizador.text = texto;
 
 		//doces
-		doces_c.text = Player_Collisions.Doce_Count.ToString() + " de " + 38;
+		doces_c.text = Player_Collisions.Doce_Count.ToString() + " de " + 40;
 
 	}
 
