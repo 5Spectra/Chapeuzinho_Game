@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Menu_Selector : MonoBehaviour {
+public class Menu_Selector_old : MonoBehaviour {
 
 	//não foi utilizado
 

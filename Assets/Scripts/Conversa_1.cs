@@ -29,8 +29,6 @@ public class Conversa_1 : MonoBehaviour {
 
 	void Update () {
 
-		print (conversa_level);
-
 		//lobo = perseguição | chapeu = movimentação | both = conversa
 		if (Vo_EnterHouse.entra_sai == 1){ 
 			//desabilita o script de movimentação
