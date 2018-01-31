@@ -85,8 +85,9 @@ public class conversa_2 : MonoBehaviour {
 
 	IEnumerator Wait_Chapeu(){
 
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (2.5f);
 		dialogo1.SetActive (true);
+		chapeu.SetBool ("isParada", true);
 		//conversa_level = 0;
 	}
 
