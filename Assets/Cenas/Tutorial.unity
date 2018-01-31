@@ -606,7 +606,8 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114330917367762246, guid: 7bffa17257c24904898cdd3c56d65493, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7bffa17257c24904898cdd3c56d65493, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &447241515 stripped
@@ -1809,6 +1810,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1961424686816214, guid: 26f6bfee06c8f684c8b6f7b1632a0f9b, type: 2}
+      propertyPath: m_TagString
+      value: doce
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 26f6bfee06c8f684c8b6f7b1632a0f9b, type: 2}
   m_IsPrefabParent: 0
@@ -2105,6 +2110,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d9d6166eb7b7548b64c3c449dd901a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1807958021 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1222366719537604, guid: 79d9d6166eb7b7548b64c3c449dd901a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1807958020}
+--- !u!114 &1807958022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807958021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 0.02, y: 0.02}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1927123853
 Prefab:
   m_ObjectHideFlags: 0

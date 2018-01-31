@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 224383916200026886}
   - component: {fileID: 222803738931695376}
   - component: {fileID: 114215066352242992}
+  - component: {fileID: 114044417259797728}
   m_Layer: 5
   m_Name: E_btn
   m_TagString: Untagged
@@ -139,7 +140,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1042418193564072}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 42.99, y: -2.066, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
@@ -227,7 +228,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3125, y: 0.525}
+    oldSize: {x: 0.6333333, y: 0.78333336}
     newSize: {x: 0.3125, y: 0.525}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -236,6 +237,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.620577, y: 0.5950171}
   m_EdgeRadius: 0
+--- !u!114 &114044417259797728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222366719537604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 0.02, y: 0.02}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114215066352242992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,14 +412,15 @@ MonoBehaviour:
   text_box: {fileID: 1690757258079072}
   parede: {fileID: 1718821086884154}
   texto: {fileID: 114646516022959004}
-  desaparece: 0
+  desaparece: 1
   num_fala: 0
   falas:
-  - aaaa
-  - bbbb
-  - cccc
-  - dddd
-  - eeee
+  - O que uma garotinha faz por essas bandas?
+  - "Voc\xEA est\xE1 pegando um atalho para sua vov\xF3."
+  - "Voc\xEA \xE9 muito corajosa, eu a escoltaria, mas"
+  - "Estou ca\xE7ando um lobo, ent\xE3o tome "
+  - cuidado e caso o encontre me procure
+  - BOA SORTE!!!!
 --- !u!114 &114984484067180714
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,7 +482,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 0b455f4b750030a4dbc162eaf7e9d5d2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7903ad74925c5e40a67c48b46017d8f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -527,7 +543,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1312029430044086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0000014305115, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 224383916200026886}
@@ -545,7 +561,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1574208843452436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.123333335, y: 1.1833334, z: 0}
   m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
   m_Children:
   - {fileID: 224990197056940370}
@@ -565,7 +581,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222366719537604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.117, y: -2.624, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224189650061512606}
@@ -584,7 +600,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1257249054797188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.017000198, y: 0.032999992, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 224990197056940370}
@@ -602,7 +618,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1690757258079072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.0399998, y: -1.997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224924704175262472}
