@@ -9,4 +9,4 @@
 
 
 - Adicionar aúdios e musicas.
-- Criar a animação de conversa e o combate final. (quick time event de ataque e defesa).
+- Criar o sistema de combate final. (quick time event de ataque e defesa).

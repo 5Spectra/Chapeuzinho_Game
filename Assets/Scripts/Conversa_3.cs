@@ -8,7 +8,7 @@ public class Conversa_3 : MonoBehaviour {
 	bool axisDown, first;
 	int conversa_level;
 
-	public Animator chapeu, lenhador, vovo, carvas, Creditos; 
+	public Animator chapeu, lenhador, vovo, carvas, creditos; 
 	public GameObject Dialogo, Cam;
 	public Text texto, falando;
 
@@ -53,9 +53,10 @@ public class Conversa_3 : MonoBehaviour {
 
 		Cam.transform.position = new Vector3 (0,0, Cam.transform.position.z);
 
-		yield return new WaitForSecondsRealtime (2f);
+		yield return new WaitForSecondsRealtime (1f);
 
-		Creditos.enabled = true;
+		creditos.enabled = true;
+		GetComponent<ScriptFinal> ().enabled = true;
 		GetComponent<Conversa_3> ().enabled = false;
 
 	}

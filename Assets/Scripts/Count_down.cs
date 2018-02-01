@@ -9,6 +9,11 @@ public class Count_down : MonoBehaviour {
 	float number = 10;
 	public Text temporizador, doces_c;
 
+	void Start(){
+		//doces
+		doces_c.text = Player_Collisions.Doce_Count.ToString() + " de " + 40;
+	}
+
 	void Update () {
 		//temporizador
 		if (number > 0)
@@ -18,10 +23,6 @@ public class Count_down : MonoBehaviour {
 
 		string texto = (Mathf.Round(number)).ToString ();
 		temporizador.text = texto;
-
-		//doces
-		doces_c.text = Player_Collisions.Doce_Count.ToString() + " de " + 40;
-
 	}
 
 	public void Troca_cena(string cena){
