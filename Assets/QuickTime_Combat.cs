@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class QuickTime_Combat : MonoBehaviour {
 
-	// Use this for initialization
+	bool axisDown;
+
 	void Start () {
-		
+
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		if (Input.GetAxisRaw ("QuickTime") > 0)//positivo
+		if (axisDown == false){
+			axisDown = true;
+		}
+
+		if (Input.GetAxisRaw ("QuickTime") < 0)//negativo
+		if (axisDown == false){
+			axisDown = true;
+		}
+
+		if (Input.GetAxisRaw ("QuickTime") == 0)
+			axisDown = false;
 	}
 }
