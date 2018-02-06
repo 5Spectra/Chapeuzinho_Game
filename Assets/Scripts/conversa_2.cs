@@ -9,7 +9,7 @@ public class conversa_2 : MonoBehaviour {
 
 	public Animator chapeu, lenhador, lobo; 
 
-	public GameObject Dialogos, dialogo1, dialogo2, combat;
+	public GameObject Dialogos, dialogo1, dialogo2;
 
 	public GameObject btn1, btn2; 
 
@@ -84,9 +84,9 @@ public class conversa_2 : MonoBehaviour {
 
 		//fim da conversa
 		if (num_conversa == 3) {
-			//Dialogos.SetActive (false);
-			combat.SetActive (true);
-			Destroy (Dialogos, 1);
+			
+			Dialogos.SetActive(false);
+			GetComponent<QuickTime_Combat> ().enabled = true;
 			GetComponent<conversa_2> ().enabled = false;
 		}
 
