@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class QuickTime_Combat : MonoBehaviour {
 
-	bool axisDown, esperando, morrendo;
+	bool axisDown, esperando;
 
 	public GameObject Lenhador, Lobo, c_ataque, c_defesa;
 	public Animator animLenhador, animLobo;
 
 	public int vida_Lenhador, vida_Lobo;
-
-
+	
 	public int phase = 0; //0 = parado || 1 = Heroi Atacando || 2 = Lobo Atacando 
 
 	bool presNeg, presPos, presPermision;
 
+	public Image ShowVidaLobo, ShowVidaLenhador;
+	
 	void Start () {
 		
 		Camera.main.orthographicSize = 2.85f;
@@ -55,18 +58,15 @@ public class QuickTime_Combat : MonoBehaviour {
 		}
 	
 		//QTE - Quick Time Event
-		if (morrendo == false){
+			if (vida_Lobo == 0) {				
+				StartCoroutine (Ending_Fight (animLobo, "Vitoria"));
+			}
+			else if (vida_Lenhador == 0) {
+				StartCoroutine (Ending_Fight (animLenhador, "Death"));
+			}
 
-			if (vida_Lobo < 1)
-				Ending_Fight (false, animLobo);
-			if (vida_Lenhador < 1)
-				Ending_Fight (true, animLenhador);
-			
-
-			if(esperando == false)
+			else if(esperando == false)
 				StartCoroutine(Turnos());
-
-		}
 
 		print("N " + presNeg);	print("P " + presPos);
 	}
@@ -101,6 +101,7 @@ public class QuickTime_Combat : MonoBehaviour {
 				animLenhador.SetInteger("Estado", Random.Range (1,3));
 				vida_Lobo -= 1;
 				animLobo.SetInteger("Estado", 5);
+				Perder_Vida(ShowVidaLobo, vida_Lobo, 6);
 			}
 			Reset_Press();
 
@@ -131,6 +132,7 @@ public class QuickTime_Combat : MonoBehaviour {
 			if (presNeg == false){
 				vida_Lenhador -= 1;
 				animLenhador.SetInteger("Estado", 5);
+				Perder_Vida(ShowVidaLenhador, vida_Lenhador, 3);
 			}
 			else {
 				animLenhador.SetInteger("Estado", 3);
@@ -156,20 +158,14 @@ public class QuickTime_Combat : MonoBehaviour {
 		phase++;
 	}
 
-	IEnumerator Ending_Fight(bool isLose, Animator anima){
-		morrendo = true;
+	IEnumerator Ending_Fight(Animator anima, string cena){
+		print ("end");
 
-		string cena = "";
+		esperando = true;
 
 		anima.SetInteger("Estado", 9);
 
 		yield return new WaitForSeconds (4f);
-
-		if (isLose == true)
-			cena = "Vitoria";
-
-		if (isLose == false)
-			cena = "Death";
 
 		UnityEngine.SceneManagement.SceneManager.LoadScene(cena);
 
@@ -180,4 +176,9 @@ public class QuickTime_Combat : MonoBehaviour {
 		presNeg = false;
 		presPos = false;
 	}
+	
+	void Perder_Vida(Image ShowVida,float vida, int startVida){
+		ShowVida.fillAmount = vida / startVida;
+	}
+	
 }
