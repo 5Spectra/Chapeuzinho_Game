@@ -12,6 +12,7 @@ public class Count_down : MonoBehaviour {
 	void Start(){
 		//doces
 		doces_c.text = Player_Collisions.Doce_Count.ToString() + " de " + 40;
+		Player_Collisions.Doce_Count = 0;
 	}
 
 	void Update () {

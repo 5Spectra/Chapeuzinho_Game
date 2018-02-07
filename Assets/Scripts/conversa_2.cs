@@ -23,11 +23,6 @@ public class conversa_2 : MonoBehaviour {
 
 	void Start () {
 
-		if (JoyStick_detection.isJoyConnect == true){
-			btn1.GetComponentInChildren<Text>().text = "B";
-			btn2.GetComponentInChildren<Text>().text = "B"; 
-		}
-
 		num_conversa = 1;
 		conversa_level = 0;
 
@@ -39,6 +34,15 @@ public class conversa_2 : MonoBehaviour {
 	void Update () {
 
 		//print ("level " + conversa_level + " | num " + num_conversa + " | Falas " + falasC1.Length);
+
+		if (JoyStick_detection.isJoyConnect == true){
+			btn1.GetComponentInChildren<Text>().text = "B";
+			btn2.GetComponentInChildren<Text>().text = "B"; 
+		}
+		else {
+			btn1.GetComponentInChildren<Text>().text = "E";
+			btn2.GetComponentInChildren<Text>().text = "E"; 
+		}
 
 		if (Input.GetAxisRaw ("Interagir") > 0)
 			if (axisDown == false){

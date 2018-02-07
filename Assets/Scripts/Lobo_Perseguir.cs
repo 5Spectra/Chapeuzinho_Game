@@ -16,7 +16,7 @@ public class Lobo_Perseguir : MonoBehaviour {
 
 	void Start () {
 		waypoint = WayPointsFolder.GetComponentsInChildren<Transform>();
-		GetComponent<Animator> ().SetInteger ("Estado", 6);
+		GetComponent<Animator> ().SetInteger ("Estado", 4);
 	}
 
 	void Update(){
@@ -48,8 +48,10 @@ public class Lobo_Perseguir : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D coll){
-		if (coll.gameObject.tag == "Player")
-			print("Kill");
+		if (coll.gameObject.tag == "Player") {
+			Destroy (coll.gameObject);
+			UnityEngine.SceneManagement.SceneManager.LoadScene ("Death");
+		}
 	}
 
 }

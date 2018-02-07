@@ -6,16 +6,16 @@ using UnityEngine.UI;
 
 public class QuickTime_Combat : MonoBehaviour {
 
-	bool axisDown, esperando;
+	bool axisDown, esperando, presNeg, presPos, presPermision;
 
-	public GameObject Lenhador, Lobo, c_ataque, c_defesa;
+	public GameObject Lenhador, Lobo, Atack, Defesa;
 	public Animator animLenhador, animLobo;
 
-	public int vida_Lenhador, vida_Lobo;
-	
-	public int phase = 0; //0 = parado || 1 = Heroi Atacando || 2 = Lobo Atacando 
+	[SerializeField]
+	int vida_Lenhador, vida_Lobo, phase = 0; //0 = parado || 1 = Heroi Atacando || 2 = Lobo Atacando 
 
-	bool presNeg, presPos, presPermision;
+	[SerializeField]
+	float velocidade = 0;
 
 	public Image ShowVidaLobo, ShowVidaLenhador;
 	
@@ -28,6 +28,15 @@ public class QuickTime_Combat : MonoBehaviour {
 	}
 
 	void Update () {
+
+		if (JoyStick_detection.isJoyConnect == true) {
+			Atack.GetComponentInChildren<Text> ().text = "B";
+			Defesa.GetComponentInChildren<Text> ().text = "X";
+		}
+		else {
+			Atack.GetComponentInChildren<Text> ().text = "D";
+			Defesa.GetComponentInChildren<Text> ().text = "A";
+		}
 
 		//camera
 		Vector3 centerPos = Vector3.Lerp(Lenhador.transform.position, Lobo.transform.position, 0.5f);
@@ -68,21 +77,12 @@ public class QuickTime_Combat : MonoBehaviour {
 			else if(esperando == false)
 				StartCoroutine(Turnos());
 
-		print("N " + presNeg);	print("P " + presPos);
-	}
-
-
-	void Ataque(){
-		
-	}
-
-	void Defesa(){
-		
+		//print("N " + presNeg);	print("P " + presPos); print ("Velocidade: " + (2f - velocidade));
 	}
 
 	IEnumerator Turnos(){
 		esperando = true;
-		yield return new WaitForSeconds (2f); //dando um tempo
+		yield return new WaitForSeconds (2f - velocidade); //dando um tempo
 
 		if (phase == 1){//heroi turn -------------------------------------------- 1
 
@@ -91,17 +91,19 @@ public class QuickTime_Combat : MonoBehaviour {
 
 			yield return new WaitForSeconds (2f); //tempo para andar
 			animLenhador.SetInteger("Estado", 0);
-			//c_ataque.SetActive(true);
+			Atack.SetActive(true);
 			presPermision = true;
-			print ("Click");
+			//print ("Click");
 
-			yield return new WaitForSeconds (2f); //verificação e tempo do QTE
+			yield return new WaitForSeconds (2f - velocidade); //verificação e tempo do QTE
+			Atack.SetActive(false);
 
 			if (presPos == true){
 				animLenhador.SetInteger("Estado", Random.Range (1,3));
 				vida_Lobo -= 1;
 				animLobo.SetInteger("Estado", 5);
 				Perder_Vida(ShowVidaLobo, vida_Lobo, 6);
+				if (velocidade < 1.5f)velocidade += 0.3f;
 			}
 			Reset_Press();
 
@@ -110,7 +112,6 @@ public class QuickTime_Combat : MonoBehaviour {
 			animLobo.SetInteger("Estado", 0);
 
 			yield return new WaitForSeconds (.5f); //tempo do reset das anim
-			//c_ataque.SetActive(false);
 			animLenhador.SetInteger("Walk", 0);
 			animLenhador.SetInteger("Estado", 4);
 		}
@@ -122,12 +123,13 @@ public class QuickTime_Combat : MonoBehaviour {
 
 			yield return new WaitForSeconds (2f); //tempo para andar
 			animLobo.SetInteger("Estado", 0);
-			//c_defesa.SetActive(true);
+			Defesa.SetActive(true);
 			presPermision = true;
-			print ("Click");
+			//print ("Click");
 
-			yield return new WaitForSeconds (2f); //verificação e tempo do QTE
+			yield return new WaitForSeconds (2f - velocidade); //verificação e tempo do QTE
 			animLobo.SetInteger("Estado", 1);
+			Defesa.SetActive(false);
 
 			if (presNeg == false){
 				vida_Lenhador -= 1;
@@ -145,7 +147,6 @@ public class QuickTime_Combat : MonoBehaviour {
 			animLobo.SetInteger("Estado", 0);
 
 			yield return new WaitForSeconds (.5f); //tempo do reset das anim
-			//c_defesa.SetActive(false);
 			animLobo.SetInteger("Walk", 0);
 			animLobo.SetInteger("Estado", 4);
 		}
@@ -159,13 +160,12 @@ public class QuickTime_Combat : MonoBehaviour {
 	}
 
 	IEnumerator Ending_Fight(Animator anima, string cena){
-		print ("end");
 
 		esperando = true;
 
 		anima.SetInteger("Estado", 9);
 
-		yield return new WaitForSeconds (4f);
+		yield return new WaitForSeconds (8f);
 
 		UnityEngine.SceneManagement.SceneManager.LoadScene(cena);
 

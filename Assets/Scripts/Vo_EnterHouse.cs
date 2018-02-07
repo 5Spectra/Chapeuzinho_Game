@@ -27,7 +27,7 @@ public class Vo_EnterHouse : MonoBehaviour
 			entra_sai = 1;
 			GameObject.Find("Casa_Vo").GetComponent<Conversa_1>().enabled = true;
 
-			GetComponent<Vo_EnterHouse> ().enabled = false;
+			GetComponent<Vo_EnterHouse> ().enabled = true;
 		}
 
 		//sair da casa
