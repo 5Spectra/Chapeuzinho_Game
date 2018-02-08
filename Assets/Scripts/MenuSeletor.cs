@@ -10,6 +10,7 @@ public class MenuSeletor : MonoBehaviour {
 
 	void Start(){
 		sistema = GameObject.Find ("EventSystem").GetComponent<EventSystem> ();
+		Destroy(GameObject.Find ("Tempo_de_Jogo"));
 	}
 
 	void FixedUpdate(){

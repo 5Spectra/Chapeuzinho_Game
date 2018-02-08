@@ -23,7 +23,7 @@ public class Vo_EnterHouse : MonoBehaviour
 		if (Input.GetAxisRaw ("Interagir") > 0 && perto == true && entra_sai == 0)
 		{
 			cam.transform.position = new Vector3 (198.85f, cam.transform.position.y, cam.transform.position.z);
-			jogador.transform.position = new Vector3 (193f, jogador.transform.position.y);
+			if (jogador != null) jogador.transform.position = new Vector3 (193f, jogador.transform.position.y);
 			entra_sai = 1;
 			GameObject.Find("Casa_Vo").GetComponent<Conversa_1>().enabled = true;
 

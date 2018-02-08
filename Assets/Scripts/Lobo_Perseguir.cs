@@ -22,6 +22,7 @@ public class Lobo_Perseguir : MonoBehaviour {
 	void Update(){
 		//115.62 - 135.3
 		if (transform.position.x < 115){
+			if (player != null)
 			if (player.position.x > waypoint[point].position.x) trapaciando = true;
 			else trapaciando = false;
 		}
@@ -50,6 +51,8 @@ public class Lobo_Perseguir : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D coll){
 		if (coll.gameObject.tag == "Player") {
 			Destroy (coll.gameObject);
+			Vo_EnterHouse.entra_sai = 0;
+			Destroy(GameObject.Find ("Tempo_de_Jogo"));
 			UnityEngine.SceneManagement.SceneManager.LoadScene ("Death");
 		}
 	}

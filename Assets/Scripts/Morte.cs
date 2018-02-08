@@ -10,6 +10,8 @@ public class Morte : MonoBehaviour {
 		if (coll.gameObject.tag == "Player") {
 			//print("morreu");
 			Destroy (coll.gameObject);
+			Vo_EnterHouse.entra_sai = 0;
+			Destroy(GameObject.Find ("Tempo_de_Jogo"));
 			UnityEngine.SceneManagement.SceneManager.LoadScene ("Death");
 		}
 	}
